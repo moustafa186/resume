@@ -1,0 +1,205 @@
+%-------------------------
+% Resume in Latex
+% Author : Moustafa Kandeel
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} llr }
+  & \textbf{{\Large Moustafa Kandeel}} &  \\
+  \href{http://github.com/moustafa186}{Github: moustafa186} & {} & \href{mailto:moustafa186@gmail.com}{moustafa186@gmail.com}\\
+  \href{http://linkedin.com/in/mkandeel}{Linkedin: mkandeel} & {} & +49-151-2465-4001 \\
+\end{tabular*}
+
+%-------- SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeItem{Software Engineering}{Problem Solving, Data Structures, Algorithms, OOP, Design Patterns, Systems Design, Software Architecture, Networks, Distributed Systems, Security, Cryptography, Bitcoin, Ethereum.}
+      \resumeItem{Programming Languages}{Java, Ruby, Python, Javascript, Bash, Solidity, SQL, R}
+      \resumeItem{Web Development}{Spring, Ruby on Rails, Node.js}
+      \resumeItem{Tools \& Platforms}{Git, Docker, AWS, Linux, Truffle, Remix, Web3.js}
+      \resumeItem{Databases}{Mysql, PostgreSQL, MongoDB.}
+      \resumeItem{Soft Skills}{Very good communication and presentation skills.}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Zalando}{Berlin, Germany}
+      {Software Engineer}{Sep 2018 -- Present}
+      \resumeItemListStart
+        \resumeItem{Collabary}
+          {Worked with the backend team to maintain Java API of Collabary, Influencer Marketing Platform by Zalando, used by frontend and mobile services, upgraded multiple services from Java 8 to 11 and moved them to new internal CI/CD system.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Crowd Analyzer}{Cairo, Egypt}
+      {Software Engineer}{May 2018 -- Aug 2018}
+      \resumeItemListStart
+        \resumeItem{Data Crawlers}
+          {"1st Arabic International Social Media Monitoring Platform", I worked with "Data Crawlers" team to develop new features and maintain existing Node.js services for crawling, cleaning data crawled from Social Media APIs and store it in ElasticSearch cluster. }
+      \resumeItemListEnd
+          
+    \resumeSubheading
+      {Jisr Labs}{Alexandria, Egypt}
+      {Senior Software Engineer}{Nov 2015 -- Apr 2018}
+           \resumeItemListStart
+       \resumeItem{Nabda Care}
+          {Developed new features and maintained existing codebase of balasmee.com, using Ruby on Rails for backend and Ember.js for frontend.}
+        \resumeItem{Best Offers}{A system that allows users to know about the best current offers in their location from their mobile device. Built with Ruby on Rails for the web application and backend, Android for the mobile application.}
+      \resumeItem{Halal Institute of America}
+	 {HIA is non-profit organization, that provides community services to allow customers be sure that certain goods they consume is authentic 'Halal'. Built with Ruby on Rails, Bootstrap, jquery.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Ejada}{Riyadh, KSA}
+      {Senior Software Engineer}{Jul 2014 -- Oct 2015}
+     \resumeItemListStart
+      \resumeItem{Alinma Bank} {
+      \resumeItemListStart
+        \resumeItem{DataWarehouse - DataQuality}
+          {Owned the full cycle of analysis, design, implementation and migration of existing DataQuality Rules from old to new data warehouse. Built using Informatica DataQuality Suite.}
+        \resumeItem{DataWarehouse - ETL}
+          {Developed Initial \& Daily loading Informatica ETL jobs.}
+      \resumeItemListEnd
+      }
+     \resumeItemListEnd
+
+    \resumeSubheading
+      {Ejada}{Riyadh, KSA}
+      {Software Engineer}{Jan 2012 -- Jun 2014}
+          \resumeItemListStart
+      \resumeItem{Mobily} {
+      \resumeItemListStart
+         \resumeItem{Integration Services}
+          {Developed and maintained several new/existing integration services in Java.}
+        \resumeItem{SMS Dispatcher}
+          {This system was the last layer used by all integration services in Mobily to send individual/bulk SMS to customer(s). It was required to increase it's throughput from 2000 SMS/second to 3000 SMS/second. Built with Java.}
+        \resumeItem{SIT environment enhancement}
+          {An internal project to enhance service integration testing environment, using Java and ANT scripts to automate tasks across 50+ servers.}  
+        \resumeItem{SSM}{Service Subscription Manager for all Mobily's customers' subscriptions (around 23M) for all supplementary services (everything except calls and SMS). It's a database engine built using PL/SQL on Oracle database.}
+      \resumeItemListEnd 
+      }
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Alexandria University}{Alexandria, Egypt}
+      {Bachelors of Science in Computer and Systems Engineering}{Sep. 2005 -- July. 2010}
+    \resumeSubheading
+      {Cambridge Training College}{London, UK}
+      {Mini-MBA Diploma (Remote Study)}{May. 2016 -- Oct. 2016}
+  \resumeSubHeadingListEnd
+
+%-----------TRAINING-----------------
+\section{Training}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {NUTechspace Incubator}{Cairo, Egypt}
+      {Blockchain Development Bootcamp, provided by \href{http://www.novelari.com/}{Novelari Innovation Accelerator}}{Mar 2018}
+    \resumeSubheading
+      {NUTechspace Incubator}{Cairo, Egypt}
+      {Cognitive Development Bootcamp, provided by IBM}{Feb 2018}
+  \resumeSubHeadingListEnd
+
+%-------- Online MOOCs------------
+\section{Online MOOCs}
+  \resumeSubHeadingListStart
+    \resumeItem{IBM Big Data University}{Big Data Foundations Levels[1,2], Hadoop Foundations Levels[1,2], Hadoop Programming, Hadoop Data Access, Hadoop Administration, Spark.}
+    \resumeItem{Data Science Specialization (Johns Hopkins University)}{The Data Scientist's toolbox, R programming, Getting and Cleaning Data, Exploratory Data Analysis.}
+    \resumeItem{Cybersecurity Specialization (Maryland University)}{Usable Security.e}
+    \resumeItem{Web Application Architectures}{3-tiered web applications architecture using Ruby on Rails.}
+    \resumeItem{Machine Learning (Stanford University)}{by Andrew Ng.}
+  \resumeSubHeadingListEnd
+
+%-----------Contests-----------------
+\section{Contests}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+       {Big Data Hackathon}{Cairo -- Egypt}
+    {The challenge was to provide as much as useful and accurate insights on some governmental data.}{Feb 2017}
+  \resumeSubHeadingListEnd      
+
+%-----------Volunteering-----------------
+\section{Volunteering Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Qcon Conference}{San Francisco -- USA}
+    {Worked with the organization team of the conference.}{Nov 2016}
+  \resumeSubHeadingListEnd      
+
+%-------------------------------------------
+\end{document}
